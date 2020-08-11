@@ -41,5 +41,5 @@ void loop() {
     digitalWrite(relayPin4,HIGH);
     delay(9999999);           // This the delay time or how long the DUT will stay turned OFF i.e 166.66665mins or 2.778Hrs.
     }                         // This is custom setting you can have your own values.
- Serial.println(counter);     // This will output the cycle count onto the serial monitor.
+ Serial.println(counter);     // This will display the cycle count onto the serial monitor.
 }
