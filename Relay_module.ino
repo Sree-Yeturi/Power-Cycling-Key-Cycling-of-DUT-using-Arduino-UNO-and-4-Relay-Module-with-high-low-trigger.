@@ -37,9 +37,11 @@ void loop() {
  digitalWrite(relayPin4,HIGH);
  delay(20000);
  counter = counter+1;         // Counter to count number of cycles the DUT turns ON/OFF. 
-    if (counter ==3000){      // Here the counter is set to count till 3000 cycles and turn off the DUT for 166.66665mins or 2.778Hrs. 
+    if (counter==3000){       // Here the counter is set to count till 3000 cycles and turn off the DUT for 166.66665mins or 2.778Hrs. 
     digitalWrite(relayPin4,HIGH);
+    counter = 0;
     delay(9999999);           // This the delay time or how long the DUT will stay turned OFF i.e 166.66665mins or 2.778Hrs.
+      
     }                         // This is custom setting you can have your own values.
  Serial.println(counter);     // This will display the cycle count onto the serial monitor.
 }
